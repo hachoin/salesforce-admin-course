@@ -568,12 +568,23 @@ function openTab(evt, id){
 </script>
 
 
+<script>
+document.querySelectorAll(".scrollTopLogo").forEach(function(logo) {
+    logo.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
 
 
 
 
 
 </html>
+
 
 
 

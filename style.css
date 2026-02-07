@@ -3,6 +3,7 @@
   padding:0;
   box-sizing:border-box;
   font-family:Arial,Helvetica,sans-serif;
+  text-align: justify;
 }
 
 body{margin:0}
@@ -972,6 +973,7 @@ ul{
 li{
     margin-bottom:6px;
 }
+
 
 
 

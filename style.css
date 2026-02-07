@@ -974,6 +974,21 @@ li{
     margin-bottom:6px;
 }
 
+.human-check {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.math-verify {
+  margin-top: 10px;
+}
+
+.math-verify input {
+  width: 120px;
+  padding: 6px;
+  margin-left: 10px;
+}
+
 
 
 

@@ -923,3 +923,49 @@ h2 {
   border-radius:10px;
 }
 
+.curriculum{
+    max-width:1000px;
+    margin:60px auto;
+    font-family:Segoe UI, sans-serif;
+}
+
+.curriculum h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.tab{
+    padding:10px 15px;
+    border:none;
+    background:#eaeaea;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.tab.active{
+    background:#0070d2;
+    color:#fff;
+}
+
+.tab-content{
+    display:none;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    background:#fafafa;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+
+

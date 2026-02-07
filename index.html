@@ -384,12 +384,26 @@ const observer = new IntersectionObserver((entries)=>{
 steps.forEach(step=>observer.observe(step));
 </script>
 
+	<script>
+function openTab(evt, id){
+    let tabs = document.querySelectorAll(".tab");
+    let contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(t=>t.classList.remove("active"));
+    contents.forEach(c=>c.classList.remove("active"));
+
+    evt.currentTarget.classList.add("active");
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
 
 
 
 
 
 </html>
+
 
 
 

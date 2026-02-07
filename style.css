@@ -995,7 +995,10 @@ html {
 
 .scrollTopLogo {
     cursor: pointer;
+  font-size: 22px;
+  color: #3a8bfd;
 }
+
 
 
 

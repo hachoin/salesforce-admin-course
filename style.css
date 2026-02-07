@@ -929,20 +929,21 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f4f6f9;
+  background: #f4f6f9;
   color: #333;
 }
 
 header {
-  background: #1589ee;
+  background: linear-gradient(135deg, #1589ee, #00c6ff);
   color: #fff;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
+  animation: fadeIn 1.5s ease;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
 }
 
 header p {
@@ -960,6 +961,17 @@ header p {
 h2 {
   color: #1589ee;
   margin-top: 40px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #00c6ff;
+  display: block;
+  margin-top: 5px;
+  border-radius: 2px;
 }
 
 h3 {
@@ -968,25 +980,46 @@ h3 {
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 li {
   margin-bottom: 10px;
 }
 
-.module {
-  background: #fff;
-  border-left: 5px solid #1589ee;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+li i {
+  color: #1589ee;
+  margin-right: 8px;
 }
 
+/* Module Styles */
+.module {
+  background: linear-gradient(135deg, #fff, #f0f8ff);
+  border-left: 5px solid #1589ee;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.module:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.module .icon {
+  font-size: 30px;
+  color: #1589ee;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* CTA Buttons */
 .cta-buttons {
   text-align: center;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 .cta-buttons a {
@@ -994,7 +1027,7 @@ li {
   background: #1589ee;
   color: #fff;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 18px 35px;
   margin: 10px;
   border-radius: 50px;
   font-weight: 600;
@@ -1005,6 +1038,18 @@ li {
   background: #0f6ac0;
 }
 
+/* Career Section */
+.career ul li {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header h1 {
@@ -1013,6 +1058,10 @@ li {
   header p {
     font-size: 1rem;
   }
+  .module .icon {
+    font-size: 25px;
+  }
 }
+
 
 

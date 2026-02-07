@@ -989,6 +989,16 @@ li{
   margin-left: 10px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.scrollTopLogo {
+    cursor: pointer;
+}
+
+
+
 
 
 

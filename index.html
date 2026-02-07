@@ -424,19 +424,20 @@
 
       <textarea name="message" rows="4" placeholder="Your Message"></textarea>
 
-		    <div class="human-check">
-      <label>
-        <input type="checkbox" id="humanCheck">
-        I am not a robot
-      </label>
+		   <div class="human-check">
+  <label>
+    <input type="checkbox" id="humanCheck">
+    I am not a robot
+  </label>
 
-      <div class="math-verify">
-        <span id="mathQuestion"></span>
-        <input type="number" id="mathAnswer" placeholder="Your Answer">
-      </div>
+  <div class="math-verify">
+    <span id="mathQuestion"></span>
+    <input type="number" id="mathAnswer" placeholder="Your Answer">
+  </div>
 
-      <p id="errorMsg">Please verify you are human.</p>
-    </div>
+  <p id="errorMsg" style="color:red; display:none;">Please verify you are human.</p>
+</div>
+
 
     <button type="submit">Submit Enquiry</button>
 
@@ -526,24 +527,24 @@ function openTab(evt, id){
 }
 </script>
 
-	<script>
-// Generate random math question
-let num1 = Math.floor(Math.random() * 10) + 1;
-let num2 = Math.floor(Math.random() * 10) + 1;
-let correctAnswer = num1 + num2;
+<script>
+  // Generate random math question
+  let num1 = Math.floor(Math.random() * 10) + 1;
+  let num2 = Math.floor(Math.random() * 10) + 1;
+  let correctAnswer = num1 + num2;
 
-document.getElementById("mathQuestion").innerText =
-  `What is ${num1} + ${num2}?`;
+  document.getElementById("mathQuestion").innerText =
+    `What is ${num1} + ${num2}?`;
 
-document.querySelector(".enquiry-form").addEventListener("submit", function(e){
-  let isChecked = document.getElementById("humanCheck").checked;
-  let userAnswer = document.getElementById("mathAnswer").value;
+  document.querySelector(".enquiry-form").addEventListener("submit", function(e) {
+    let isChecked = document.getElementById("humanCheck").checked;
+    let userAnswer = document.getElementById("mathAnswer").value;
 
-  if(!isChecked || userAnswer != correctAnswer){
-    e.preventDefault();
-    document.getElementById("errorMsg").style.display = "block";
-  }
-});
+    if (!isChecked || userAnswer != correctAnswer) {
+      e.preventDefault();
+      document.getElementById("errorMsg").style.display = "block";
+    }
+  });
 </script>
 
 
@@ -551,7 +552,9 @@ document.querySelector(".enquiry-form").addEventListener("submit", function(e){
 
 
 
+
 </html>
+
 
 
 

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hachoin.github.io/salesforce-admin-course/sitemap.xml
+Sitemap: https://hachoin.github.io/salesforce-admin-course/sitemap.html
+

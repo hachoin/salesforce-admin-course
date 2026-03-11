@@ -27,4 +27,20 @@ function scrollToEnroll(){
   document.getElementById('enroll').scrollIntoView({behavior:'smooth'});
 }
 
+var form = document.getElementById("contactForm");
+var iframe = document.getElementById("hidden_iframe");
+var popup = document.getElementById("popup");
+
+form.addEventListener("submit", function(){
+setTimeout(function(){
+popup.style.display = "flex";
+form.reset();
+},1500);
+});
+
+function closePopup(){
+popup.style.display = "none";
+}
+
+
 
